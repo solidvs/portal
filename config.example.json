@@ -1,0 +1,16 @@
+{
+  "PUBLIC_URL": "http://localhost:5173",
+  "OIDC_ISSUER": "http://localhost:8081/realms/internal",
+  "OIDC_CLIENT_ID": "portal",
+  "OIDC_CLIENT_SECRET": "<from the identity provider; never commit>",
+  "OIDC_ALLOW_INSECURE_ISSUER": "true",
+  "LOG_LEVEL": "info",
+  "GITHUB_ORG": "<GitHub organization of the installation>",
+  "GITHUB_TOKEN": "<local development only: a token with read access to the organization; never commit>",
+  "DATABASE_HOST": "localhost",
+  "DATABASE_PORT": "55432",
+  "DATABASE_NAME": "portal_dev",
+  "DATABASE_USER": "portal_dev_app",
+  "DATABASE_PASSWORD": "<from the provisioning procedure; never commit>",
+  "DATABASE_TLS_CA": "<PEM of the server certificate's authority, when it is not a public one>"
+}

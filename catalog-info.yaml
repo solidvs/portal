@@ -1,0 +1,15 @@
+# Catalog manifest: how this system appears in the IT portal. One per repository; review it in the
+# same pull request as any change that makes it untrue.
+apiVersion: solidvs/catalog/v1
+kind: System
+metadata:
+  id: portal
+  name: Portal de TI
+  description: Ambiente de administração da TI com catálogo, ambientes, deploys, decisões e procedimentos de todos os sistemas.
+spec:
+  type: web
+  lifecycle: development
+  owner: ti
+  surfaces: [internal]
+  stack: standard
+  dependsOn: [identity, github]
